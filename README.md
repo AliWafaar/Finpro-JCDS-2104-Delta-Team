@@ -96,7 +96,7 @@ Dalam tahap pemodelan, digunakan pendekatan *pipeline* yang melibatkan *Iterativ
 1. **Pipeline Iterative Imputer, OHE, dan Scaler:**
    - *Iterative Imputer* mengisi nilai-nilai yang hilang dengan estimasi yang lebih akurat.
    - *One-Hot Encoding (OHE)* mengonversi variabel kategorikal menjadi format numerik.
-   - *Standard Scaler* menormalkan skala data.
+   - *Robust* menormalkan skala data.
 
 2. **Seleksi Model dan Benchmarking:**
    - Beberapa model machine learning, seperti *Logistic Regression, Random Forest, dan XGBoost*, dievaluasi untuk memilih model terbaik.
@@ -119,12 +119,12 @@ Proses ini bertujuan untuk memberikan solusi prediktif yang optimal dalam mengid
 
 ### Evaluasi Dampak Penggunaan Model Machine Learning
 
-Berdasarkan Confusion Matrix pada hasil prediksi model final, diperoleh hasil sebagai berikut:
+Berdasarkan confussion matrix pada hasil prediksi model final, diperoleh hasil sebagai berikut:
 
-- True Positive (Pelanggan yang actual churn dan diprediksi churn): 172 orang
-- False Negative (Pelanggan yang actual churn tetapi diprediksi tidak churn): 18 orang
-- False Positive (Pelanggan yang actual tidak churn tetapi diprediksi churn): 12 orang
-- True Negative (Pelanggan yang actual tidak churn dan diprediksi tidak churn): 924 orang
+- Jumlah pelanggan yang aktualnya *churn* dan diprediksi *churn* (**True Positive**) : 175 orang
+- Jumlah pelanggan yang aktualnya *churn* tetapi diprediksi tidak *churn* (**False Negative**) : 15 orang
+- Jumlah pelanggan yang aktualnya tidak *churn* tetapi diprediksi *churn* (**False Positive**) : 16 orang
+- Jumlah pelanggan yang aktualnya tidak *churn* dan diprediksi tidak *churn* (**True Negative**) : 920 orang
 
 ### Dampak Keuangan
 
@@ -132,18 +132,19 @@ Berdasarkan Confusion Matrix pada hasil prediksi model final, diperoleh hasil se
 - Biaya akibat kehilangan pelanggan (Churn) = $274 per bulan per pelanggan
 
 #### Estimasi Biaya Tanpa Model Machine Learning
-- Total biaya tanpa model machine learning: $82,912.4 per bulan
-- Calon pelanggan yang kita berikan program retensi: 1,126 orang (total pelanggan)
+- Total biaya tanpa model machine learning: $82912,4 per bulan
+- Calon pelanggan yang kita berikan program retensi: 1126 orang (total pelanggan)
 - Calon pelanggan yang aktualnya churn: 190 orang
 
 #### Estimasi Biaya dengan Model Machine Learning
-- Total biaya dengan model machine learning: $57,101.6 per bulan
+- Total biaya dengan model machine learning: $57293,46 per bulan
 - Calon pelanggan yang akan diberikan program retensi: 184 orang (True Positive + False Positive)
 - Calon pelanggan yang aktualnya churn: 190 orang
 
 ### Manfaat Penggunaan Model Machine Learning
-- Total penurunan potensial loss: $82,912.4 - $57,101.6 = $25,810.8 per bulan
-- Persentase penurunan: 31.13%
+- Total penurunan potensial loss: $82912.4 - $57101.6 = $25619 per bulan
+- Persentase penurunan: 30,90%
+
 
 **Kesimpulan:**
 Berdasarkan data uji, model final dapat membantu perusahaan menurunkan kerugian hingga 31.13% dalam sebulan menggunakan machine learning. Penggunaan model ini memungkinkan perusahaan untuk lebih efisien dalam memberikan program retensi kepada pelanggan yang berpotensi churn, sehingga mengurangi biaya yang dikeluarkan tanpa mengurangi efektivitas program tersebut.
