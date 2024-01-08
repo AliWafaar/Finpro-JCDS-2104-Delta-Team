@@ -1,14 +1,16 @@
+# Prediksi Churn E-commerce
+
+
 Halo semua! 
 
 Selamat datang di proyek prediksi churn E-commerce kami. Dalam proyek ini, kami telah melakukan analisis mendalam dan pengembangan model machine learning untuk membantu perusahaan E-commerce dalam mengidentifikasi pelanggan yang berpotensi melakukan churn. Churn, atau berhenti berlangganan, menjadi fokus utama dalam upaya retensi pelanggan.
 
-# Link Terkait
+## Link Terkait
 
 - [Dashboard Tableau: Analisis Churn E-commerce](https://public.tableau.com/app/profile/ali.wafa.afif.ramdhan7404/viz/JCDS2104TableauDeltaTeam/ChurnDashboard?publish=yes)
 - [Dataset Raw: Churn E-commerce](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction)
 - [Dataset Cleaned: Churn E-commerce](https://github.com/AliWafaar/JCDS-2104-Delta-Team/blob/main/E%20Commerce%20Dataset_Modified.xlsx)
-
-# Prediksi Churn E-commerce
+- [Pipeline Best Model(.sav)](https://github.com/AliWafaar/Finpro-JCDS-2104-Delta-Team/blob/main/Final_Model_E-Commerce_Customer_Churn.sav)
 
 ## Latar Belakang
 Di era bisnis modern, E-commerce menjadi pilar utama dalam ekonomi global dengan perkembangan teknologi yang pesat. Sebagai sarana transaksi online, E-commerce membuka peluang pertumbuhan yang besar. Dalam konteks ini, retensi pelanggan menjadi krusial untuk kesuksesan E-commerce di tengah persaingan yang ketat.
